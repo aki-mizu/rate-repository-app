@@ -16,6 +16,7 @@ const compat = new FlatCompat({
 });
 
 export default defineConfig([{
+    files: ["**/*.{ts,tsx,js,jsx}"], // Include all relevant files
     extends: compat.extends("eslint:recommended", "plugin:react/recommended"),
 
     plugins: {
